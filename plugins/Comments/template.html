@@ -1,0 +1,45 @@
+<div class="comments">
+	<h3>Komentáře: {NUMBER_OF_COMMENTS}</h3>
+
+	{item}
+	<div id="comment-{ID}" class="commentHeader">[{NUMBER}] {NAME}	<small><em>({DATE})</em></small></div>
+	<div class="commentContent">{CONTENT}</div>
+	{/item}
+	<form id="commentForm" action="{FORM_SELF}#commentForm" method="post">
+		<input type="hidden" name="action" value="save-comment" />
+		<input type="hidden" name="page" value="{FORM_PAGE}" />
+		<input type="hidden" name="ccsecret" value="{CCSECRET}" />
+
+	
+		<div class="commentAdd">
+		<h3>Přidat komentář</h3>		
+		<p><small>Prosím dávejte vložené odkazy do hranatých závorek, např. [http://i-logout.cz]. Děkuji.</small></p>		
+			<div>
+				<div class="commentLabel"><strong>{FORM_NAME}</strong></div>
+				<input tabindex="1" type="text" size="30" name="name" value="{FORM_NAME_VALUE}" />
+				<div class="cleaner"> </div>
+			</div>
+			
+			<div>
+				<div class="commentLabel">{FORM_EMAIL}</div>
+				<input tabindex="2" size="30" type="text" name="email" value="{FORM_EMAIL_VALUE}" />
+				<div class="cleaner"> </div>
+			</div>
+			
+			<div>
+				<div class="commentLabel"><strong>{FORM_CONTENT}</strong></div>
+				<textarea name="content" tabindex="3" class="contentTextarea" cols="80" rows="4">{FORM_CONTENT_VALUE}</textarea>
+				<div class="cleaner"> </div>
+			</div>
+			
+			<div>
+				<strong>{CCHINT}</strong> <input type="text" size="10" name="ccvalue" tabindex="4"/> {COMCAPTCHA}
+			</div>
+			
+			<input type="submit" value="{FORM_SUBMIT}" tabindex="5" />
+		</div>
+	</form>
+	
+	
+</div>
+<div class="cleaner"> </div>
