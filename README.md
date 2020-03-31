@@ -43,7 +43,7 @@ and depending on the $BLOG_FULL (TRUE/FALSE) full text of post or just excerpt.
 2. On the page specified as $BLOG_ARCHIVE the list of all posts is created,
 with the same sorting, but the $BLOG_FULL is ignored and the list contains
 always only excerpt of every post.
-3. Blog RSS feed is created in var/blog-rss.xml containing [6~last $BLOG_RSS
+3. Blog RSS feed is created in var/blog-rss.xml containing last $BLOG_RSS
 posts. This count is on purpose different than the $BLOG_COUNT by default,
 however nothing prevents you to set both variables to the same value in
 config.php. RSS feed also never contains the full post, only excerpt.
@@ -77,7 +77,7 @@ this little change it's settled.
 - Changed behavior of '''''SOMETEXT''''' which in LionWiki syntax makes text
 both bold and italics. It was implemented via clever trick as combination of
 '''SOMETEXT''' (bold) and ''SOMETEXT'' (italics), but rendered invalid HTML
-    <strong><em>SOMETEXT</strong></em>.
+`<strong><em>SOMETEXT</strong></em>`.
 
 ## config.php
 Nev global variables added and set to some default values. Nothing more.
