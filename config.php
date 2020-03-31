@@ -15,7 +15,7 @@ $LANG="en";
 
 $START_PAGE="blog";
 $BLOG_ARCHIVE="archive";
-$BLOG_FULL="true";
+$BLOG_FULL=TRUE;
 $BLOG_COUNT=5;
 $BLOG_RSS=8;
 $DATE_FORMAT="F j, Y \\a\\t g:i A T";
