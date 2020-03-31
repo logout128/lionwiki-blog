@@ -107,5 +107,5 @@ This code is already used on three blogs:
 - [vivapowerpc.eu](http://vivapowerpc.eu)
 
 It seems to work. So feel free to grab it and use it. Everything may be
-merged to more current LionWiki codebase after I upgrade my PHP some day,
+updated with more current LionWiki codebase after I upgrade my PHP some day,
 but don't take my word for it.
