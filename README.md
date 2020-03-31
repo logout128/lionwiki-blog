@@ -80,7 +80,7 @@ both bold and italics. It was implemented via clever trick as combination of
 `<strong><em>SOMETEXT</strong></em>`.
 
 ## config.php
-Nev global variables added and set to some default values. Nothing more.
+New global variables added and set to some default values. Nothing more.
 
 ## New global variables
 New global variables introduced (some of them already mentioned above):
