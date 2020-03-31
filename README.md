@@ -77,7 +77,7 @@ this little change it's settled.
 - Changed behavior of '''''SOMETEXT''''' which in LionWiki syntax makes text
 both bold and italics. It was implemented via clever trick as combination of
 '''SOMETEXT''' (bold) and ''SOMETEXT'' (italics), but rendered invalid HTML
-<strong><em>SOMETEXT</strong></em>.
+	<strong><em>SOMETEXT</strong></em>.
 
 ## config.php
 Nev global variables added and set to some default values. Nothing more.
