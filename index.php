@@ -370,7 +370,8 @@ if(!$action || $preview) { // page parsing
 	$CON = strtr($CON, array('&lt;-->' => '&harr;', '-->' => '&rarr;', '&lt;--' => '&larr;', "(c)" => '&copy;', "(r)" => '&reg;'));
 	$CON = preg_replace("/\{small\}(.*)\{\/small\}/U", "<small>$1</small>", $CON); // small
 	$CON = preg_replace("/\{su([bp])\}(.*)\{\/su([bp])\}/U", "<su$1>$2</su$3>", $CON); // sup and sub
-
+	$CON = preg_replace("/\{code\}(.*)\{\/code\}/U", "<code>$1</code>", $CON); // code
+	
 	$CON = preg_replace("/^([^!\*#\|\<\-\{\n][^\n]+)$/Um", '<p>$1</p>', $CON); // paragraphs
 
 	// images
