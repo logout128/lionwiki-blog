@@ -66,7 +66,7 @@ also modified accordingly and JavaScript usage was removed as I didn't find
 it necessary.
 
 ## index.php
-Just two minor changes from the original:
+Just three minor changes from the original:
 
 - If anyone tries to visit page microsoft-Dz, he gets 404 and is redirected
 elsewhere (to wikipedia by default). This string in URL triggers malware
@@ -78,6 +78,8 @@ this little change it's settled.
 both bold and italics. It was implemented via clever trick as combination of
 '''SOMETEXT''' (bold) and ''SOMETEXT'' (italics), but rendered invalid HTML
 `<strong><em>SOMETEXT</strong></em>`.
+- Added `{code}SOMECODE{/code}` for in-line code inside of another block of
+text result is generated as a `<code>SOMECODE</code>` in HTML.
 
 ## config.php
 New global variables added and set to some default values. Nothing more.
