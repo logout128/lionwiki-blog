@@ -74,9 +74,9 @@ monitoring tools on the side of webhosting providers and as on wiki every
 page exists even if blank with editing form, I had bad experiences from the
 past, when I spent hours convincing admins that my page wasn't hacked. With
 this little change it's settled.
-- Changed behavior of '''''SOMETEXT''''' which in LionWiki syntax makes text
+- Changed behavior of `'''''SOMETEXT'''''` which in LionWiki syntax makes text
 both bold and italics. It was implemented via clever trick as combination of
-'''SOMETEXT''' (bold) and ''SOMETEXT'' (italics), but rendered invalid HTML
+`'''SOMETEXT'''` (bold) and `''SOMETEXT''` (italics), but rendered invalid HTML
 `<strong><em>SOMETEXT</strong></em>`.
 - Added `{code}SOMECODE{/code}` for in-line code inside of another block of
 text result is generated as a `<code>SOMECODE</code>` in HTML.
@@ -100,7 +100,7 @@ informs the visitor that all posts are in $BLOG_ARCHIVE
 (i.e. "in archive")
 
 The content of the last two variables will be rendered to LionWiki syntax as:
-'''You can find all posts [in archive|archive].'''
+`'''You can find all posts [in archive|archive].'''`
 
 ## Conclusion
 This code is already used on three blogs:
